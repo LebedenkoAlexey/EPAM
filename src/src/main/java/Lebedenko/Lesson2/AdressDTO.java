@@ -1,4 +1,4 @@
-package EPAM_Lessons.Lesson2;
+package src.main.java.Lebedenko.Lesson2;
 
 public class AdressDTO{
     private String country;
