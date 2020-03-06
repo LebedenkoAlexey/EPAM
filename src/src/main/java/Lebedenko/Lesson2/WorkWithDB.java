@@ -1,4 +1,4 @@
-package EPAM_Lessons.Lesson2;
+package src.main.java.Lebedenko.Lesson2;
 
 import java.lang.reflect.Array;
 import java.util.Random;
