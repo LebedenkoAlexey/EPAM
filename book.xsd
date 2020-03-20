@@ -1,0 +1,26 @@
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Books">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Book">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="Page_count"/>
+                            <xs:element type="xs:string" name="Publisher"/>
+                            <xs:element name="Author">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="firstName"/>
+                                        <xs:element type="xs:string" name="lastName"/>
+                                        <xs:element type="xs:string" name="secondName"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="title"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

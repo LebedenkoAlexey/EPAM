@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- Аппендер с выводом в файл-->
+    <appender name="fileDom" class="ch.qos.logback.core.FileAppender">
+        <file>logs\plant_catalog_with_DOM.txt</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>
+                %msg%n
+            </Pattern>
+        </encoder>
+    </appender>
+    <!-- Логгер для файла-->
+    <logger name="Lebedenko.Lesson6.WriteWithDOM" level="info" additivity="false">
+        <appender-ref ref="fileDom"/>
+    </logger>
+    <!-- Аппендер с выводом в файл-->
+    <appender name="fileSAX" class="ch.qos.logback.core.FileAppender">
+        <file>logs\plant_catalog_with_SAX.txt</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>
+                %msg%n
+            </Pattern>
+        </encoder>
+    </appender>
+    <!-- Логгер для файла-->
+    <logger name="Lebedenko.Lesson6.ReadWithSAX" level="info" additivity="false">
+        <appender-ref ref="fileSAX"/>
+    </logger>
+
+    <root level="error">
+        <appender-ref ref="fileDom"/>
+    </root>
+</configuration>
